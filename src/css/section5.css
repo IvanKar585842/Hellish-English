@@ -1,6 +1,9 @@
 .container {
     margin: 0 auto;
 }
+
+
+
 .section--teacher {
     height: 775px;
 }
@@ -16,10 +19,7 @@ color: #181111;
 .section__div--partsholder {
     display: flex;
 }
-.div__img--teacher {
-    width: 530px;
-    height: 668px;
-}
+
 .section__div--teacher {
     width: 642px;
     margin-left: 60px;
@@ -35,9 +35,12 @@ letter-spacing: 0.08em;
 .div__hr--teacher {
     width: 640px;
 }
-.check {
+.li__svg--teacher {
     width: 25px;
     height: 20px;
+    fill: #FF6B09;
+    padding: 0;
+    margin-right: 34px;
 }
 .ul__li--teach {
    font-family: var(--font-family);
@@ -77,12 +80,38 @@ color: #ff6b09;
 .li__span--teacher {
     margin-left: 64px;
 }
-.check {
-    margin-right: 34px;
-}
+
 .li_div--teacher {
     height: 2px;
     width: 20px;
     background-color: #ff6b09;
     margin-bottom: 43px;
+}
+.li__use--teacher {
+    width: 25px;
+    height: 20px;
+}
+.div__img--teacher {
+    max-width: 530px;
+    width: 100%;
+    height: auto; /* Important: maintains aspect ratio */
+    object-fit: cover;
+    /* Remove the background-image property */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .div__img--teacher {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .section__div--partsholder {
+        flex-direction: column;
+    }
+    
+    .section__div--teacher {
+        margin-left: 0;
+        margin-top: 20px;
+    }
 }
