@@ -1,159 +1,201 @@
 .container {
     margin: 0 auto;
-    max-width: 1235px;
-    @media screen and (max-width: 768px) and (min-width: 321px) {
-        width: 688px;
+    width: 100%;
+    padding: 0 15px;
+    @media screen and (min-width: 480px) {
+        max-width: 480px;
+    }
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;
     }
 }
-
-
-
 .section--teacher {
-    max-height: 775px;
-    margin-bottom: 2000px;
-    @media screen and (max-width: 768px) and (min-width: 321px) {
-        height: 505px;
-    }
+    margin-top: 70px;
+    margin-bottom: 70px;
+        
+        @media screen and (min-width: 768px) {
+            margin-top: 70px;
+        }
+        @media screen and (min-width: 1200px) {
+            margin-top: 130px;
+        }
 }
-
 .section__title--teacher {
     font-family: var(--font-family);
-font-weight: 800;
-font-size: 46px;
-line-height: 130%;
-letter-spacing: 0.03em;
-color: #181111;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    color: #111518;
+    margin-bottom: 30px;
+
+        @media screen and (min-width: 768px) {
+            font-size: 26px;
+            line-height: 130%;
+            letter-spacing: 0.03em;
+            color: #111518;
+        }
+        
+        @media screen and (min-width: 1200px) {
+            font-size: 46px;
+            margin-bottom: 50x;
+        }
 }
 .section__div--partsholder {
-    display: flex;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    } 
+}
+.section__img--teacher {
+    width: 100%;
+    height: 305px;
+        
+        @media screen and (min-width: 768px) {
+            max-width: 243px;
+            height: 305px;
+        }
+        @media screen and (min-width: 1200px) {
+            max-width: 530px;
+            height: 668px;
+        } 
 }
 
-.section__div--teacher {
-    width: 642px;
-    margin-left: 60px;
-    @media screen and (max-width: 768px) and (min-width: 321px) {
-        width: 403px;
-        margin-right: 42px;
-    }
 
+
+
+
+.section__div--teacher {
+    margin-top: 20px;
+    width: 100%;
+        @media screen and (min-width: 768px) {
+            margin-left: 42px;
+            margin-top: 0;
+        }
+        @media screen and (min-width: 1200px) {
+            margin-left: 60px;
+            margin-top: 0;
+        } 
 }
 .div__title--teacher {
     font-family: var(--font-family);
-font-weight: 800;
-font-size: 30px;
-letter-spacing: 0.08em;
-
-}
-.div__hr--teacher {
-    width: 100%;
-    @media screen and (max-width: 768px) and (min-width: 321px) {
-        width: 100%;
-    }
-}
-.li__svg--teacher {
-    width: 25px;
-    height: 20px;
-    fill: #FF6B09;
-    padding: 0;
-    margin-right: 34px;
-    @media screen and (max-width: 768px) and (min-width: 321px) {
-        margin-right: 16px;
-        width: 18px;
-        height: 14px;
-    }
-}
-.ul__li--teach {
-   font-family: var(--font-family);
-font-weight: 500;
-font-size: 18px;
-line-height: 156%;
-color: #b9b9b9;
-    @media screen and (max-width: 768px) and (min-width: 321px) {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    color: #111518;
+        @media screen and (min-width: 768px) {
 
 
-        font-size: 10px;
-        line-height: 200%;
+            letter-spacing: 0.08em;
 
-    }
+        }
+        @media screen and (min-width: 1200px) {
+            letter-spacing: 0.08em;
+            font-size: 30px;
+                
 
-}
-.nii {
-    margin-top: 28px;
-    @media screen and (max-width: 768px) and (min-width: 321px) {
-        margin-top: 15px;
-    }
-}
-.san {
-    margin-top: 28px;
-    @media screen and (max-width: 768px) and (min-width: 321px) {
-        margin-top: 15px;
-    }
-}
-.chi {
-    margin-top: 22px;
-    @media screen and (max-width: 768px) and (min-width: 321px) {
-        margin-top: 20px;
-    }
+        } 
 }
 .ul__li--teacher {
     font-family: var(--font-family);
 font-weight: 600;
-font-size: 16px;
+font-size: 14px;
 letter-spacing: 0.06em;
 color: #111518;
-margin-top: 30px;
-padding: 0;
-@media screen and (max-width: 768px) and (min-width: 321px) {
+margin-bottom: 20px;
+display: flex;
+    align-items: flex-start;
+        @media screen and (min-width: 768px) {
 
-        font-size: 12px;
-        margin-top: 20px;
-    }
+            font-size: 12px;
+            margin-bottom: 20px;
+
+        }
+        @media screen and (min-width: 1200px) {
+
+font-size: 16px;
+margin-bottom: 44px;
+
+
+        } 
 }
+.li__svg--teacher {
+    width: 18px;
+    height: 14px;
+    fill: #ff6b09;
+    margin-right: 4px;
+    flex-shrink: 0;
+    margin-top: 2px;
+        @media screen and (min-width: 768px) {
+            width: 18px;
+            height: 14px;
+            margin-right: 10px;
+        }
+        @media screen and (min-width: 1200px) {
+            width: 25px;
+            height: 20px;
+            margin-right: 34px;
+        } 
+}
+
+.ul__li--teach {
+margin-top: 15px;
+font-size: 12px;
+line-height: 167%;
+color: #b9b9b9;
+        @media screen and (min-width: 768px) {
+
+font-size: 10px;
+line-height: 200%;
+
+        }
+        @media screen and (min-width: 1200px) {
+            font-family: var(--font-family);
+
+font-size: 18px;
+line-height: 156%;
+
+
+        }
+}
+.li_div--teacher {
+    width: 20px;
+    height: 1px;
+    background-color: #ff6b09;
+
+}
+
 .li__link--teach {
     font-family: var(--font-family);
 font-weight: 500;
-font-size: 18px;
-line-height: 156%;
+font-size: 12px;
+line-height: 167%;
 text-decoration: underline;
 text-decoration-skip-ink: none;
 color: #ff6b09;
-    @media screen and (max-width: 768px) and (min-width: 321px) {
+    @media screen and (min-width: 768px) {
 
-    font-size: 12px;
-    line-height: 167%;
- 
-    }
-}
-.li__span--teacher {
-    margin-left: 64px;
-        @media screen and (max-width: 768px) and (min-width: 321px) {
-            margin-left: 38px;
+
+font-size: 12px;
+line-height: 167%;
+
+
+        }
+        @media screen and (min-width: 1200px) {
+            font-family: var(--font-family);
+
+
+font-size: 18px;
+line-height: 156%;
+
+
+
         }
 }
-
-.li_div--teacher {
-    height: 2px;
-    width: 20px;
-    background-color: #ff6b09;
-    margin-bottom: 43px;
-    @media screen and (max-width: 768px) and (min-width: 321px) {
-        margin-bottom: 30px;
-    }
-
-}
-.li__use--teacher {
-    width: 25px;
-    height: 20px;
-}
-.div__img--teacher {
-    max-width: 530px;
-    width: 100%;
-    height: auto; /* Important: maintains aspect ratio */
-    object-fit: cover;
-    /* Remove the background-image property */
-    @media screen and (max-width: 768px) and (min-width: 321px) {
-        width: 243px;
-        height: 305px;
-    }
-}
-
