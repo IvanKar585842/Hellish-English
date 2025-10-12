@@ -1,6 +1,10 @@
 .container {
     margin: 0 auto;
     width: 1314px;
+    @media screen and (max-width: 768px) and (min-width: 321px) {
+        width: 768px;
+
+    }
 }
 .section__title--guarantee {
     font-family: var(--font-family);
@@ -11,10 +15,20 @@ letter-spacing: 0.03em;
 text-align: center;
 color: #111518;
 margin-bottom: 50px;
+@media screen and (max-width: 768px) and (min-width: 321px) {
+
+
+font-size: 26px;
+margin-bottom: 30px;
+
+    }
 }
 .section__gallery--guarantee {
     padding: 50px 112px;
     background-color: #f1f1f1;
+    @media screen and (max-width: 768px) and (min-width: 321px) {
+        padding: 30px 65px;
+    }
 }
 .gallery__li--guarantee {
     display: flex;
@@ -25,6 +39,11 @@ margin-bottom: 50px;
     width: 22px;
     height: 30px;
     margin-right: 30px;
+    @media screen and (max-width: 768px) and (min-width: 321px) {
+        width: 15px;
+        height: 20px;
+        margin-right: 24px;
+    }
 }
 .no_m {
     margin: 0;
@@ -37,6 +56,12 @@ margin-bottom: 50px;
     margin-left: 6px;
     margin-top: 2px;
     margin-bottom: 2px;
+    @media screen and (max-width: 768px) and (min-width: 321px) {
+        height: 30px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        margin-left: 3px;
+    }
 
 }
 .li__holder--guarantee {
@@ -45,6 +70,14 @@ margin-bottom: 50px;
 }
 .li__p--guarantee {
     padding-top: 7px;
+    @media screen and (max-width: 768px) and (min-width: 321px) {
+        font-family: var(--font-family);
+font-weight: 500;
+font-size: 12px;
+line-height: 167%;
+color: #3d3d3d;
+padding-top: 0;
+    }
 }
 .oran {
     color: #FF6B09;
