@@ -7,16 +7,31 @@
         <div class="container">
         <h2 class="section__title--teacher">Teacher</h2>
         <div class="section__div--partsholder">
-                <img
-                class="div__img--teacher"
-                srcset="
-                  ./images/elena-moreva@1-min.jpg 1x,
-                  ./images/elena-moreva@2-min.jpg 2x
-                "
-                src="./images/elena-moreva@1-min.jpg"
-                alt="woman teacher"
-              />
+                
+                <picture class="div__img--teacher">
+                    <!-- Desktop -->
+                    <source 
+                        srcset="../images/elena-moreva-desktop@1x.jpg 1x,
+                        ../images/elena-moreva-desktop@2x.jpg 2x"
+                        media="(min-width: 1200px)">
 
+                    <!-- Tablet -->
+                    <source 
+                        srcset="../images/elena-moreva-tablet@1x.jpg 1x,
+                        ../images/elena-moreva-tablet@2x.jpg 2x"
+                        media="(min-width: 768px)">
+
+                    <!-- Mobile -->
+                    <source 
+                        srcset="../images/elena-moreva-mobile@1x.jpg 1x,
+                        ../images/elena-moreva-mobile@2x.jpg 2x"
+                        media="(max-width: 767px)">
+
+                    <!-- Fallback (in case <picture> isn’t supported) -->
+                    <img 
+                        src="../images/elena-moreva-desktop@1x.jpg"
+                        alt="teacher img">
+                </picture>
 
             <div class="section__div--teacher">
                 <h3 class="div__title--teacher">Elena Moreva</h3>
@@ -30,7 +45,7 @@
                     </svg> Own result of passing VNO - 197 points 2 years in a row</li>
                     <li class="ul__li--teacher"><svg class="li__svg--teacher">
                         <use class="li__use--teacher" href="./icons/symbol-defs.svg#icon-checkmark"></use>
-                    </svg> Passed excellent at the international analogue of UPE -<br><span class="li__span--teacher">Cambridge PET (Preliminary English Test)</span></li>
+                    </svg> Passed excellent at the international analogue of UPE -Cambridge PET (Preliminary English Test)</li>
                     <li class="ul__li--teacher"><div class="li_div--teacher"></div></li>
                 </ul>
                 <ul class="div__ul--teach">
