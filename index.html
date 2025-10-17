@@ -11,8 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     
-    <script type="module" crossorigin src="/Hellish-English/assets/index-98088bf3.js"></script>
-    <link rel="stylesheet" href="/Hellish-English/assets/index-155fe50c.css">
+    <script type="module" crossorigin src="/Hellish-English/assets/index-d9013702.js"></script>
+    <link rel="stylesheet" href="/Hellish-English/assets/index-3b67b03c.css">
   </head>
   <body>
     <!-- Loads the specified .html file -->
@@ -378,16 +378,31 @@
         <div class="container">
         <h2 class="section__title--teacher">Teacher</h2>
         <div class="section__div--partsholder">
-                <img
-                class="div__img--teacher"
-                srcset="
-                  ./images/elena-moreva@1-min.jpg 1x,
-                  ./images/elena-moreva@2-min.jpg 2x
-                "
-                src="/Hellish-English/assets/elena-moreva@1-min-edc983e4.jpg"
-                alt="woman teacher"
-              />
+                
+                <picture class="div__img--teacher">
+                    <!-- Desktop -->
+                    <source 
+                        srcset="../images/elena-moreva-desktop@1x.jpg 1x,
+                        ../images/elena-moreva-desktop@2x.jpg 2x"
+                        media="(min-width: 1200px)">
 
+                    <!-- Tablet -->
+                    <source 
+                        srcset="../images/elena-moreva-tablet@1x.jpg 1x,
+                        ../images/elena-moreva-tablet@2x.jpg 2x"
+                        media="(min-width: 768px)">
+
+                    <!-- Mobile -->
+                    <source 
+                        srcset="../images/elena-moreva-mobile@1x.jpg 1x,
+                        ../images/elena-moreva-mobile@2x.jpg 2x"
+                        media="(max-width: 767px)">
+
+                    <!-- Fallback (in case <picture> isn’t supported) -->
+                    <img 
+                        src="../images/elena-moreva-desktop@1x.jpg"
+                        alt="teacher img">
+                </picture>
 
             <div class="section__div--teacher">
                 <h3 class="div__title--teacher">Elena Moreva</h3>
@@ -401,7 +416,7 @@
                     </svg> Own result of passing VNO - 197 points 2 years in a row</li>
                     <li class="ul__li--teacher"><svg class="li__svg--teacher">
                         <use class="li__use--teacher" href="/Hellish-English/assets/symbol-defs-645ceb77.svg#icon-checkmark"></use>
-                    </svg> Passed excellent at the international analogue of UPE -<br><span class="li__span--teacher">Cambridge PET (Preliminary English Test)</span></li>
+                    </svg> Passed excellent at the international analogue of UPE -Cambridge PET (Preliminary English Test)</li>
                     <li class="ul__li--teacher"><div class="li_div--teacher"></div></li>
                 </ul>
                 <ul class="div__ul--teach">
