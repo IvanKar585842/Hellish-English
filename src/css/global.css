@@ -1,0 +1,26 @@
+:root {
+  --font-family: "Montserrat", sans-serif;
+}
+body {
+    font-family: var(--font-family);
+    line-height: 167%;
+    font-size: 12px;
+    letter-spacing: 0.03em;
+}
+.container {
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 0;
+    @media screen and (min-width: 480px) {
+        max-width: 480px;
+        
+    }
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+        padding: 0 15px;
+    }
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;
+        padding: 0 15px;
+    }
+}
