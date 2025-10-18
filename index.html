@@ -11,8 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     
-    <script type="module" crossorigin src="/Hellish-English/assets/index-1052d85b.js"></script>
-    <link rel="stylesheet" href="/Hellish-English/assets/index-998bb601.css">
+    <script type="module" crossorigin src="/Hellish-English/assets/index-f913e9e4.js"></script>
+    <link rel="stylesheet" href="/Hellish-English/assets/index-474def25.css">
   </head>
   <body>
     <!-- Loads the specified .html file -->
@@ -57,39 +57,53 @@
             <div class="hero__content">
               <h1 class="hero__title">Complex preparation for English UPE</h1>
               <p class="hero__subtitle">
-                It won’t be easy. <br>
-                But you are guaranteed to get <span class="hero__highlight">+25 points</span>
+                It won’t be easy.
+              </p>
+                <p class="hero__highlight">But you are guaranteed to get
+                <span class="hero__numbers">+25 points</span>
               </p>
               <button class="hero__button">I want a free lesson</button>
             </div>
       
             <div class="hero__image-wrapper">
-              <img src="../images/group.png" alt="Student preparing for UPE" class="hero__image">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="../images/group-desktop.png">
+                <source media="(min-width: 768px)" srcset="../images/group-tablet.png">
+                <img src="../images/group-mobile.png" alt="Student preparing for UPE" class="hero__image">
+              </picture>
             </div>
+            
       
           </div>
       
-          <ul class="hero__features">
-            <li class="hero__feature">
-              <svg class="hero__icon">
-                <use href="../icons/symbol-defs.svg#icon-human-svg"></use>
-              </svg>
-              <p class="hero__feature-text">Adapted author’s UPE program</p>
-            </li>
-            <li class="hero__feature">
-              <svg class="hero__icon">
-                <use href="../icons/symbol-defs.svg#icon-phone-svg"></use>
-              </svg>
-              <p class="hero__feature-text">Modern teaching methods</p>
-            </li>
-            <li class="hero__feature">
-              <svg class="hero__icon">
-                <use href="../icons/symbol-defs.svg#icon-umbrella-svg"></use>
-              </svg>
-              <p class="hero__feature-text">Financial guarantee of results</p>
-            </li>
-          </ul>
-        </div>
+          <div class="hero__features-wrapper">
+            <ul class="hero__features">
+              <li class="hero__feature">
+                <svg class="hero__icon">
+                  <use href="../icons/symbol-defs.svg#icon-human-svg"></use>
+                </svg>
+                <div>
+                  <p class="hero__feature-text1">Adapted author’s<br> UPE program</p>
+                </div>
+              </li>
+              <li class="hero__feature">
+                <svg class="hero__icon">
+                  <use href="../icons/symbol-defs.svg#icon-phone-svg"></use>
+                </svg>
+                <div>
+                  <p class="hero__feature-text2">Modern teaching<br> methods</p>
+                </div>
+              </li>
+              <li class="hero__feature">
+                <svg class="hero__icon">
+                  <use href="../icons/symbol-defs.svg#icon-umbrella-svg"></use>
+                </svg>
+                <div>
+                  <p class="hero__feature-text3">Financial guarantee<br> the result</p>
+                </div>
+              </li>
+            </ul>
+          </div>          
       </section>
     <section class="problems">
     <div class="container">
@@ -132,6 +146,8 @@
      =============Section 3================
      ======================================
      carts-->
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
      <section class="carts">
       <div class="container">
         <h2 class="carts__title">How do we do it</h2>
@@ -163,7 +179,7 @@
                   <h3 class="carts__overlay-text">Classroom and online<br>learning</h3>
                   <div class="carts__vector"></div>
                   <p class="carts__description">
-                    The teacher will help not only in<br> the classroom, but also during<br> home preparation.<br>
+                    The teacher will help not only in the classroom, but also during home preparation.
                     Parents can chat if they wish.
                   </p>
                 </div>
@@ -180,7 +196,7 @@
                   <h3 class="carts__overlay-text">The habit of reading in<br>English</h3>
                   <div class="carts__vector"></div>
                   <p class="carts__description">
-                    Articles from sources that are<br> used in the development of this<br> UPE will be received by phone<br> twice a week.
+                    Articles from sources that are used in the development of this UPE will be received by phone twice a week.
                   </p>
                 </div>
               </div>
@@ -196,8 +212,8 @@
                   <h3 class="carts__overlay-text">Psychological<br>support</h3>
                   <div class="carts__vector"></div>
                   <p class="carts__description">
-                    We will teach you testing techniques, the ability to plan<br> your confidence training
-                   <br> in itself.
+                    We will teach you testing techniques, the ability to plan your confidence training
+                    in itself.
                   </p>
                 </div>
               </div>
@@ -213,8 +229,8 @@
                   <h3 class="carts__overlay-text">Training on copyright<br>manuals</h3>
                   <div class="carts__vector"></div>
                   <p class="carts__description">
-                    You don't have to waste your time on a search for material and to<br> buy anything extra.
-                    We have<br> compiled<br>2 manuals for you.
+                    You don't have to waste your time on a search for material and to buy anything extra.
+                    We have compiled 2 manuals for you.
                   </p>
                 </div>
               </div>
@@ -230,8 +246,8 @@
                   <h3 class="carts__overlay-text">Ability to comprehend spoken English</h3>
                   <div class="carts__vector"></div>
                   <p class="carts__description">
-                    “F.R.I.E.N.D.S” won't help you. You will listen regularly<br>
-                    and analyze audio recordings<br>in accordance with the studied<br>vocabulary.
+                    “F.R.I.E.N.D.S” won't help you. You will listen regularly
+                    and analyze audio recordings in accordance with the studied vocabulary.
                   </p>
                 </div>
               </div>
