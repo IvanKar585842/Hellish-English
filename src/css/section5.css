@@ -1,17 +1,4 @@
-.container {
-    margin: 0 auto;
-    width: 100%;
-    padding: 0 15px;
-    @media screen and (min-width: 480px) {
-        max-width: 480px;
-    }
-    @media screen and (min-width: 768px) {
-        max-width: 768px;
-    }
-    @media screen and (min-width: 1200px) {
-        max-width: 1200px;
-    }
-}
+
 .section--teacher {
     margin-top: 70px;
     margin-bottom: 70px;
@@ -28,15 +15,13 @@
     font-weight: 800;
     font-size: 20px;
     line-height: 130%;
-    letter-spacing: 0.03em;
+
     color: #111518;
     margin-bottom: 30px;
 
         @media screen and (min-width: 768px) {
             font-size: 26px;
-            line-height: 130%;
-            letter-spacing: 0.03em;
-            color: #111518;
+
         }
         
         @media screen and (min-width: 1200px) {
@@ -89,7 +74,7 @@
     font-weight: 800;
     font-size: 20px;
     line-height: 130%;
-    letter-spacing: 0.03em;
+
     color: #111518;
         @media screen and (min-width: 768px) {
 
@@ -148,8 +133,8 @@ margin-bottom: 44px;
 
 .ul__li--teach {
 margin-top: 15px;
-font-size: 12px;
-line-height: 167%;
+
+
 color: #b9b9b9;
         @media screen and (min-width: 768px) {
 
@@ -176,19 +161,12 @@ line-height: 156%;
 .li__link--teach {
     font-family: var(--font-family);
 font-weight: 500;
-font-size: 12px;
-line-height: 167%;
+
+
 text-decoration: underline;
 text-decoration-skip-ink: none;
 color: #ff6b09;
-    @media screen and (min-width: 768px) {
 
-
-font-size: 12px;
-line-height: 167%;
-
-
-        }
         @media screen and (min-width: 1200px) {
             font-family: var(--font-family);
 
