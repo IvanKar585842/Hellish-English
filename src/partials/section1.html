@@ -11,37 +11,51 @@
             <div class="hero__content">
               <h1 class="hero__title">Complex preparation for English UPE</h1>
               <p class="hero__subtitle">
-                It won’t be easy. <br>
-                But you are guaranteed to get <span class="hero__highlight">+25 points</span>
+                It won’t be easy.
+              </p>
+                <p class="hero__highlight">But you are guaranteed to get
+                <span class="hero__numbers">+25 points</span>
               </p>
               <button class="hero__button">I want a free lesson</button>
             </div>
       
             <div class="hero__image-wrapper">
-              <img src="../images/group.png" alt="Student preparing for UPE" class="hero__image">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="../images/group-desktop.png">
+                <source media="(min-width: 768px)" srcset="../images/group-tablet.png">
+                <img src="../images/group-mobile.png" alt="Student preparing for UPE" class="hero__image">
+              </picture>
             </div>
+            
       
           </div>
       
-          <ul class="hero__features">
-            <li class="hero__feature">
-              <svg class="hero__icon">
-                <use href="../icons/symbol-defs.svg#icon-human-svg"></use>
-              </svg>
-              <p class="hero__feature-text">Adapted author’s UPE program</p>
-            </li>
-            <li class="hero__feature">
-              <svg class="hero__icon">
-                <use href="../icons/symbol-defs.svg#icon-phone-svg"></use>
-              </svg>
-              <p class="hero__feature-text">Modern teaching methods</p>
-            </li>
-            <li class="hero__feature">
-              <svg class="hero__icon">
-                <use href="../icons/symbol-defs.svg#icon-umbrella-svg"></use>
-              </svg>
-              <p class="hero__feature-text">Financial guarantee of results</p>
-            </li>
-          </ul>
-        </div>
+          <div class="hero__features-wrapper">
+            <ul class="hero__features">
+              <li class="hero__feature">
+                <svg class="hero__icon">
+                  <use href="../icons/symbol-defs.svg#icon-human-svg"></use>
+                </svg>
+                <div>
+                  <p class="hero__feature-text1">Adapted author’s<br> UPE program</p>
+                </div>
+              </li>
+              <li class="hero__feature">
+                <svg class="hero__icon">
+                  <use href="../icons/symbol-defs.svg#icon-phone-svg"></use>
+                </svg>
+                <div>
+                  <p class="hero__feature-text2">Modern teaching<br> methods</p>
+                </div>
+              </li>
+              <li class="hero__feature">
+                <svg class="hero__icon">
+                  <use href="../icons/symbol-defs.svg#icon-umbrella-svg"></use>
+                </svg>
+                <div>
+                  <p class="hero__feature-text3">Financial guarantee<br> the result</p>
+                </div>
+              </li>
+            </ul>
+          </div>          
       </section>
