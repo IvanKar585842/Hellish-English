@@ -1,0 +1,117 @@
+.problems {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.problems__title {
+    width: 320px;
+    height: 545px;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+    position: relative;
+    z-index: 1;
+    padding: 25px 20px;
+    background-size: 407px 472px;
+    color: #ffffff;
+    background-color: #111518;
+
+    @media screen and (min-width: 768px) {
+        width: 450px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        width: 805px;
+        font-size: 46px;
+    }
+}
+
+.problems__list {
+    padding: 20px 27px;
+    width: 280px;
+    height: 490px;
+    position: absolute;
+    z-index: 1;
+    top: 140px;
+    left: 30px;
+    background-color: white;
+    color: black;
+
+    @media screen and (min-width: 768px) {
+        width: 450px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        width: 805px;
+        font-size: 46px;
+    }
+
+}
+
+.problems__item {
+    background-image: none;
+    width: 226px;
+
+
+}
+
+.problems__title+.problems__list {
+    margin-top: 21px;
+}
+
+.problems__item+.problems__item {
+    margin-top: 15px;
+}
+
+.problems__number {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 20px;
+    gap: 5px 8px 26px 0;
+    color: #ff6b09;
+}
+
+.problems__text {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 14px;
+    color: #111518;
+}
+
+.problems__title-highlight {
+    color: orange;
+}
+
+
+@media screen and (min-width: 768px) {
+    .container {
+
+        padding: 20px;
+        width: 768px;
+        display: flex;
+        background-image: none;
+        font-family: 'Montserrat';
+        background-color: #111518;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 20px;
+        flex-basis: calc((100%-20px) / 2);
+
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        padding: 30px;
+        background: url(../images/Group.png) no-repeat right;
+        font-family: 'Montserrat';
+        background-color: #111518;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 30px;
+        flex-basis: calc((100%-30px) / 3);
+
+    }
+}
