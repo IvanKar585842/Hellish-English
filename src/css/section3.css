@@ -25,13 +25,13 @@
 .carts__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* центрируем карточки */
+  justify-content: center;
   align-items: flex-start;
   gap: 30px;
   padding: 0;
   margin: 0 auto;
   list-style: none;
-  max-width: 1350px; /* 3 карточки по 418 + 2*30px между ними */
+  max-width: 1350px;
   box-sizing: border-box;
 }
 
@@ -137,15 +137,13 @@
   max-width: 350px;
   margin: 0 auto;
 }
-/* --- Планшет (2 карточки в ряд) --- */
 @media screen and (max-width: 1024px) {
   .carts__item {
-    width: 418px; /* фиксированная ширина */
-    height: 396px; /* фиксированная высота */
+    width: 418px;
+    height: 396px;
   }
 }
 
-/* --- Мобильная версия (1 карточка в колонку) --- */
 @media screen and (max-width: 767px) {
   .carts__title {
     font-size: 20px;
@@ -216,10 +214,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Отступ между карточками */
+    gap: 20px;
     padding: 0;
     margin: 0 auto;
-    max-width: 708px; /* 334*2 + 20 = ровно под две карточки */
+    max-width: 708px;
   }
 
   .carts__item {
@@ -276,7 +274,6 @@
     padding-bottom: 10px;
   }
 
-  /* Hover эффекты */
   .carts__item:hover {
     background: #f97316;
     color: #fff;
@@ -294,13 +291,11 @@
 
 
 @media screen and (max-width: 767px) {
-  /* Убираем паддинги у контейнера, чтобы карточки ровно отступали */
   .carts .container {
     padding-left: 0;
     padding-right: 0;
   }
 
-  /* Заголовок */
   .carts__title {
     font-family: var(--font-family);
     font-weight: 800;
@@ -309,20 +304,19 @@
     letter-spacing: 0.03em;
     color: #111518;
     padding-bottom: 25px;
-    margin: 0; /* сброс стандартных margin */
+    margin: 0;
   }
 
-  /* Список карточек */
+
   .carts__list {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 15px;       /* расстояние между карточками */
-    padding-left: 20px; /* отступ слева для карточек */
+    gap: 15px;
+    padding-left: 20px;
     margin: 0;
   }
 
-  /* Карточки */
   .carts__item {
     width: 280px;
     height: 276px;
@@ -341,7 +335,7 @@
     box-sizing: border-box;
   }
 
-  /* Иконки */
+
   .carts__icon {
     width: 40px;
     height: 40px;
@@ -350,13 +344,12 @@
     flex-shrink: 0;
   }
 
-  /* Заголовок внутри карточки */
   .carts__overlay-text {
     font-size: 14px;
     line-height: 140%;
   }
 
-  /* Описание карточки */
+
   .carts__description {
     font-size: 13px;
     line-height: 20px;
