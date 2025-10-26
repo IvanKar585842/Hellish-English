@@ -20,11 +20,30 @@
             </div>
       
             <div class="hero__image-wrapper">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="../images/group-desktop.png">
-                <source media="(min-width: 768px)" srcset="../images/group-tablet.png">
-                <img src="../images/group-mobile.png" alt="Student preparing for UPE" class="hero__image">
-              </picture>
+              <picture class="div__img--hero">
+                <!-- Desktop -->
+                <source 
+                    srcset="./images/group-desktop1x.png 1x,
+                    ./images/group-desktop2x.png 2x"
+                    media="(min-width: 1200px)">
+
+                <!-- Tablet -->
+                <source 
+                    srcset="./images/group-tablet1x.png 1x,
+                    ./images/group-tablet2x.png 2x"
+                    media="(min-width: 768px)">
+
+                <!-- Mobile -->
+                <source 
+                    srcset="./images/group-mobile1x.png 1x,
+                    ./images/group-mobile2x.png 2x"
+                    media="(max-width: 767px)">
+
+                <!-- Fallback (in case <picture> isn’t supported) -->
+                <img 
+                    src="./images/group-desktop1x.png"
+                    alt="hero-img">
+            </picture>
             </div>
             
       
@@ -34,7 +53,7 @@
             <ul class="hero__features">
               <li class="hero__feature">
                 <svg class="hero__icon">
-                  <use href="../icons/symbol-defs.svg#icon-human-svg"></use>
+                  <use href="./icons/symbol-defs.svg#icon-human-svg"></use>
                 </svg>
                 <div>
                   <p class="hero__feature-text1">Adapted author’s<br> UPE program</p>
@@ -42,7 +61,7 @@
               </li>
               <li class="hero__feature">
                 <svg class="hero__icon">
-                  <use href="../icons/symbol-defs.svg#icon-phone-svg"></use>
+                  <use href="./icons/symbol-defs.svg#icon-phone-svg"></use>
                 </svg>
                 <div>
                   <p class="hero__feature-text2">Modern teaching<br> methods</p>
@@ -50,7 +69,7 @@
               </li>
               <li class="hero__feature">
                 <svg class="hero__icon">
-                  <use href="../icons/symbol-defs.svg#icon-umbrella-svg"></use>
+                  <use href="./icons/symbol-defs.svg#icon-umbrella-svg"></use>
                 </svg>
                 <div>
                   <p class="hero__feature-text3">Financial guarantee<br> the result</p>
