@@ -4,31 +4,57 @@
      ======================================
      Teacher-->
      <section class="section--teacher">
+        <div class="container">
         <h2 class="section__title--teacher">Teacher</h2>
-        <div class="section__div--teacher">
-            <img src="" class="div__img--teacher" alt="women img">
+        <div class="section__div--partsholder">
+                
+                <picture class="div__img--teacher">
+                    <!-- Desktop -->
+                    <source 
+                        srcset="./images/elena-moreva-desktop@1x.jpg 1x,
+                        ./images/elena-moreva-desktop@2x.jpg 2x"
+                        media="(min-width: 1200px)">
+
+                    <!-- Tablet -->
+                    <source 
+                        srcset="./images/elena-moreva-tablet@1x.jpg 1x,
+                        ./images/elena-moreva-tablet@2x.jpg 2x"
+                        media="(min-width: 768px)">
+
+                    <!-- Mobile -->
+                    <source 
+                        srcset="./images/elena-moreva-mobile@1x.jpg 1x,
+                        ./images/elena-moreva-mobile@2x.jpg 2x"
+                        media="(max-width: 767px)">
+
+                    <!-- Fallback (in case <picture> isn’t supported) -->
+                    <img 
+                        src="./images/elena-moreva-desktop@1x.jpg"
+                        alt="teacher img">
+                </picture>
+            <div class="section__div--teacher">
+                <h3 class="div__title--teacher">Elena Moreva</h3>
+                <hr class="div__hr--teacher">
+                <ul class="div__ul--teacher">
+                    <li class="ul__li--teacher"><svg class="li__svg--teacher">
+                        <use class="li__use--teacher" href="./icons/symbol-defs.svg#icon-checkmark"></use>
+                    </svg> 6 yeards of experience in preparing students for UPE</li>
+                    <li class="ul__li--teacher"><svg class="li__svg--teacher">
+                        <use class="li__use--teacher" href="./icons/symbol-defs.svg#icon-checkmark"></use>
+                    </svg> Own result of passing VNO - 197 points 2 years in a row</li>
+                    <li class="ul__li--teacher"><svg class="li__svg--teacher">
+                        <use class="li__use--teacher" href="./icons/symbol-defs.svg#icon-checkmark"></use>
+                    </svg> Passed excellent at the international analogue of UPE -Cambridge PET (Preliminary English Test)</li>
+                    <li class="ul__li--teacher"><div class="li_div--teacher"></div></li>
+                </ul>
+                <ul class="div__ul--teach">
+                    <li class="ul__li--teach ich">Graduated from the Institute of International Relations of the NAU with a degree in translator-analyst.</li>
+                    <li class="ul__li--teach nii">In spare time takes courses from the best universities in the world on effective teaching and essay writing techniques.</li>
+                    <li class="ul__li--teach san">Completed: English Grammar and Essay Writing (Berkeley), English Grammar & Style (The University of Queesland), How to Write an Essay (Berkeley), Academic and Business Writing (Berkeley), The Art of Teaching (GEMS education), Powerful Tools for Teaching and Learning (University of Houston).</li>
+                    <li class="ul__li--teach chi"><a href="" class="li__link--teach">Cambrige English Entry Level Certificate.</a></li>
+                </ul>
+                
+            </div>
         </div>
-        <div class="section__div--teacher">
-            <h3 class="div__title--teacher">Elena Moreva</h3>
-            <hr class="div__hr--teacher">
-            <ul class="div__ul--teacher">
-                <li class="ul__li--teacher"><svg>
-                    <use></use>
-                </svg> 6 yeards of experience in preparing students for UPE</li>
-                <li class="ul__li--teacher"><svg>
-                    <use></use>
-                </svg> Own result of passing VNO - 197 points 2 years in a row</li>
-                <li class="ul__li--teacher"><svg>
-                    <use></use>
-                </svg> Passed excellent at the international analogue of UPE - Cambridge PET (Preliminary English Test)</li>
-                <li class="ul__li--teacher"><div class="li_div--teacher"></div></li>
-            </ul>
-            <ul class="div__ul--teach">
-                <li class="ul__li--teach">Graduated from the Institute of International Relations of the NAU with a degree in translator-analyst.</li>
-                <li class="ul__li--teach">In spare time takes courses from the best universities in the world on effective teaching and essay writing techniques.</li>
-                <li class="ul__li--teach">Completed: English Grammar and Essay Writing (Berkeley), English Grammar & Style (The University of Queesland), How to Write an Essay (Berkeley), Academic and Business Writing (Berkeley), The Art of Teaching (GEMS education), Powerful Tools for Teaching and Learning (University of Houston).</li>
-                <li class="ul__li--teach"><a href="" class="li__link--teach">Cambrige English Entry Level Certificate</a></li>
-            </ul>
-            
         </div>
      </section>
