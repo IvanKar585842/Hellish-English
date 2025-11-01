@@ -1,7 +1,18 @@
 :root {
   --font-family: 'Montserrat', sans-serif;
 }
-
+.hero__container {
+  width: 280px;
+  margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    width: 708px;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1422px;
+    margin: 0 auto;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -14,8 +25,6 @@ body {
   font-family: var(--font-family);
 }
 .header-link {
-  width: 1422px;
-  margin: 0 auto;
   padding-top: 30px;
   padding-bottom: 30px;
   background: #fff;
@@ -289,3 +298,4 @@ label span::after { top: 8px; }
 #toggle:checked ~ .header__image-wrapper .logo--default {
   opacity: 0;
 }
+
