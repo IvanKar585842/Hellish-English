@@ -1,32 +1,22 @@
-<header class="header">
-  <input type="checkbox" id="toggle">
-  <label for="toggle">
-    <span></span>
-  </label>
+<header class="header-link">
+  <div class="container-header">
+    <input type="checkbox" id="toggle">
+    <label for="toggle"><span></span></label>
 
-  <div class="container">
-    <div class="hero__image-wrapper">
-      <picture class="div__img--teacher">
-        <!-- Desktop -->
-        <source 
-            srcset="./images/elena-moreva-desktop@1x.jpg 1x,
-                    ./images/elena-moreva-desktop@2x.jpg 2x"
-            media="(min-width: 1200px)">
-        <!-- Tablet -->
-        <source 
-            srcset="./images/elena-moreva-tablet@1x.jpg 1x,
-                    ./images/elena-moreva-tablet@2x.jpg 2x"
-            media="(min-width: 768px)">
-        <!-- Mobile -->
-        <source 
-            srcset="./images/elena-moreva-mobile@1x.jpg 1x,
-                    ./images/elena-moreva-mobile@2x.jpg 2x"
-            media="(max-width: 767px)">
-        <img src="./images/elena-moreva-desktop@1x.jpg" alt="teacher img">
+    <div class="header__image-wrapper">
+      <picture class="div__img--logo">
+        <source srcset="./images/logo-desktop1x.png 1x, ./images/logo-desktop2x.png 2x" media="(min-width: 1200px)">
+        <source srcset="./images/logo-tablet1x.png 1x, ./images/logo-tablet2x.png 2x" media="(min-width: 768px)">
+        <source srcset="./images/logo-mobile1x.png 1x, ./images/logo-mobile2x.png 2x" media="(max-width: 767px)">
+        <img src="./images/logo-desktop1x.png" alt="logo" class="logo logo--default">
+      </picture>
+
+      <picture class="div__img--logo logo--white">
+        <source srcset="./images/logo-white-tablet2x.png 1x, ./images/logo-white-tablet2x.png 2x" media="(min-width: 768px)">
+        <source srcset="./images/logo-white-mobile1x.png 1x, ./images/logo-white-mobile1x.png 2x" media="(max-width: 767px)">
+        <img src="./images/logo-white-mobile1x.png" alt="white logo">
       </picture>
     </div>
-
-    <a href="#" class="header__contact-link header__contact-link--tablet">Consultation by phone</a>
 
     <nav class="header__nav">
       <ul class="nav__list">
@@ -34,10 +24,10 @@
         <li class="nav__item"><a class="nav__link-active" href="#">About</a></li>
         <li class="nav__item"><a class="nav__link" href="#">Training options</a></li>
         <li class="nav__item"><a class="nav__link" href="#">Contacts</a></li>
-        <li class="nav__item">
-          <a href="#" class="header__contact-link">Consultation by phone</a>
-        </li>
+        <li class="nav__item"><a href="#" class="header__contact-link">Consultation by phone</a></li>
       </ul>
     </nav>
+
+    <a href="#" class="header__contact-link header__contact-link--tablet">Consultation by phone</a>
   </div>
 </header>
