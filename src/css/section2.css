@@ -17,9 +17,9 @@
 
 .problemsbg {
     height: 545px;
-    width: 320px;
+    width: 100%;
     background-color: black;
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
@@ -29,7 +29,7 @@
         height: 340px;
     }
 
-    @media screen and (min-width:1024px) {
+    @media screen and (min-width:1200px) {
         width: 1680px;
         height: 560px;
         padding: 100px 692px 280px 183px;
@@ -50,7 +50,7 @@
         width: 450px;
     }
 
-    @media screen and (min-width:1024px) {
+    @media screen and (min-width:1200px) {
        
        width: 805px;
        height: 180px;
@@ -76,7 +76,7 @@
         row-gap: 20px;
     }
 
-    @media screen and (min-width:768px) {
+    @media screen and (min-width:1200px) {
        width: 1314px;
        padding: 67px 113px;
         column-gap: 40px;
@@ -90,7 +90,7 @@
         flex-basis: calc((100% - 68px) / 2);
     }
 
-    @media screen and (min-width:1024px) {
+    @media screen and (min-width:1200px) {
         flex-basis: calc((100% - 80px) / 3);
         font-size: 20px;
     }
