@@ -1,7 +1,18 @@
 :root {
   --font-family: 'Montserrat', sans-serif;
 }
-
+.hero__container {
+  width: 280px;
+  margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    width: 708px;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1422px;
+    margin: 0 auto;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -13,10 +24,9 @@ a {
 body {
   font-family: var(--font-family);
 }
-
 .header-link {
-  width: 100%;
-  padding: 20px 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   background: #fff;
 }
 
@@ -76,9 +86,12 @@ color: #ff6b09;
 }
 
 .nav__link {
-  font-size: 20px;
-  font-weight: 800;
-  color: #fff;
+  font-family: var(--font-family);
+font-weight: 700;
+font-size: 14px;
+text-transform: uppercase;
+text-align: center;
+color: #b9b9b9;
   @media screen and (min-width: 768px) { 
     font-family: var(--font-family);
     font-weight: 800;
@@ -253,3 +266,36 @@ label span::after { top: 8px; }
     color: #111518; 
   }
 }
+.header__image-wrapper {
+  position: relative;
+  flex-shrink: 0;
+  width: 150px; /* фиксированная ширина логотипа */
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+/* Белое лого поверх шторки, скрыто по умолчанию */
+.logo--white {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 3000; /* выше всего */
+}
+
+/* Показываем белое лого при открытой шторке */
+#toggle:checked ~ .header__image-wrapper .logo--white {
+  opacity: 1;
+}
+
+/* Скрываем черное лого, когда шторка открыта */
+#toggle:checked ~ .header__image-wrapper .logo--default {
+  opacity: 0;
+}
+
