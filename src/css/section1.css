@@ -283,3 +283,15 @@ color: #111518;
       left: -35px;
   }
 }
+.hero__container {
+  width: 280px;
+  margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    width: 708px;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1422px;
+    margin: 0 auto;
+  }
+}
