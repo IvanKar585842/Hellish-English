@@ -62,7 +62,7 @@ body {
   background: transparent;
 }
 
-.header-container {
+.container-header {
   display: flex;
   align-items: center;
   justify-content: flex-start;
